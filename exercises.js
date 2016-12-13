@@ -24,8 +24,9 @@ The for loop is made up for 3 parts:
 1) Initialization (i.e. var i = 0;)
 2) Condition (i.e. i<arr.length;)
 3) Update (i.e. i++)
-
 */
+
+
 
 /* 
 1) Function - youGetTaco
