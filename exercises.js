@@ -1,48 +1,31 @@
-/*If statements
-If statments are a way for our applications to take different paths through our code or make choices about what kind of behavior our application takes based on certain conditions or values in our variables. The variable or value that we are testing to be true is known as the condition.*/
-/*In Human: If this condition is true, do something.*/
+/*
+If statements - Evaluates (or checks) a condition. If the condition is true, any statements in the subsequent code block are executed
+*/
 
-var isTurnedOn = true;
-function flipSwitch(){
-  if(isTurnedOn){
-    isTurnedOn = false;
-  }
-}
+if(today === "Friday"){
+  return "Let's Party!";
+};
 
-/*If/Else Statements
-If/Else statments have the same behavior as our if statement above but we can add a secondary condition in the case that our if statement is not true to take another action instead. What if our light is already turned off when we flip the switch?
+/*
+If/else statements = Evaluates (or checks) a condition. If the condition is true, the first code block is executed. If the condition is false, the second code block is executed instead.
+*/
 
-In Human: If this condition is true, do something, else if it is false, do something else.*/
+if(today === "Friday"){
+  return "Let's Party!";
+}else{
+  return "Get back to coding!";
+};
 
-var isTurnedOn = false;
-function flipSwitch(){
-  if(isTurnedOn){
-    isTurnedOn = false;
-  }
-  else{
-    isTurnedOn = true;
-  }
-}
+/*
+For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
 
-/*For loops
-Sometimes we want to loop over a collection of data stored in an Arrayor inspect each character in a String. Or we just want to execute a block of code a set number of times before continuing on with the execution of our program. For loops allow us to execute a block of code and at the end of each iteration of our for loop we will evaluate a condition to determine if our loop should run again similar to our if statment.
+The for loop is made up for 3 parts:
 
-Our for loop is made up of 3 parts: 1. Variable initialization 2. Termination condition 3. Afterthought
+1) Initialization (i.e. var i = 0;)
+2) Condition (i.e. i<arr.length;)
+3) Update (i.e. i++)
 
-In Human: While our variable i is less than the size of our Array retrieve each element in the Array. At the end of each loop add 1 to the current value of i.*/
-
-var lotteryNumbers = [0, 23, 12, 55, 2, 44, 65];
-for(var i = 0; i < lotteryNumbers; i++){
-  var currentLotteryNumber = lotteryNumbers[i];
-  checkWinningNumber(currentLotteryNumber);
-}
-
-function makeCrazyLongString(string){
-  var outputString = "";
-  for(var i =0; i < 100; i++){
-    outputString = outputString.concat(string);
-  }
-}
+*/
 
 /* 
 1) Function - youGetTaco
